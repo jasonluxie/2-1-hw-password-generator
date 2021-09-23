@@ -4,14 +4,15 @@
 Password generator which asks users for inputs which determine the length of password and types of characters allowed to then generate as password. 
 ## Deployed Application
 https://jasonluxie.github.io/2-1-hw-password-generator/
+
 ## Application Demonstration
 Application asks user for passworth length input
-<kbd>![Password Length](2-1-hw-password-generator\assets\images\1-password-length.png)</kbd>
+<kbd>![Password Length](https://github.com/jasonluxie/2-1-hw-password-generator/blob/main/assets/images/1-password-length.png)</kbd>
 If a non-valid length is given (under 8 or over 128), user is prompted to input a valid number until 
-<kbd>![Length Validation](2-1-hw-password-generator\assets\images\2-length-validation.png)</kbd>
-<kbd>![Character Confirmation](2-1-hw-password-generator\assets\images\3-character-confirmation.png)</kbd>
-<kbd>![Character Validation](2-1-hw-password-generator\assets\images\4-character-validation.png)</kbd>
-<kbd>![Password Generated!](2-1-hw-password-generator\assets\images\5-password-generated.png)</kbd>
+<kbd>![Length Validation](https://github.com/jasonluxie/2-1-hw-password-generator/blob/main/assets/images/2-length-validation.png)</kbd>
+<kbd>![Character Confirmation](https://github.com/jasonluxie/2-1-hw-password-generator/blob/main/assets/images/3-character-confirmation.png)</kbd>
+<kbd>![Character Validation](https://github.com/jasonluxie/2-1-hw-password-generator/blob/main/assets/images/4-character-validation.png)</kbd>
+<kbd>![Password Generated!](https://github.com/jasonluxie/2-1-hw-password-generator/blob/main/assets/images/5-password-generated.png)</kbd>
 
 ## Logic and Thought Process
 1. HTML Button which starts the function to generate password
