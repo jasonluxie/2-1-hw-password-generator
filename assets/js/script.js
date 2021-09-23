@@ -13,11 +13,12 @@ function generatePassword() {
     let specialArr = ['!','@','#','$','%','^','&','*','(',')','-','_','+','=','[',']','{','}',';',':','<','>',',','.','\\', '/','?','\'','\"'];
     let passwordArr = [];
 
-    let passwordLength = prompt("How many characters long would you like your password to be? Please choose between 8 and 128 characters.");
+    let passwordLength = prompt("How many characters long would you like your password to be? Please choose an integer between 8 and 128 characters.");
 
-    while (passwordLength < 8 || passwordLength > 128) {
-        passwordLength = prompt("Password length must be between 8 and 128 characters. Please try again.");
+    while (passwordLength < 8 || passwordLength > 128 || !Number.isInteger(Number(passwordLength))) {
+        passwordLength = prompt("Password length must be an integer between 8 and 128 characters. Please try again.");
     };
+
     function valueCheck(){
         let lowercaseCheck = confirm("Do you want lowercase letters in your password?");
         if (lowercaseCheck) {

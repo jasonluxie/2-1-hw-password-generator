@@ -4,6 +4,15 @@
 Password generator which asks users for inputs which determine the length of password and types of characters allowed to then generate as password. 
 ## Deployed Application
 https://jasonluxie.github.io/2-1-hw-password-generator/
+## Application Demonstration
+Application asks user for passworth length input
+<kbd>![Password Length](2-1-hw-password-generator\assets\images\1-password-length.png)</kbd>
+If a non-valid length is given (under 8 or over 128), user is prompted to input a valid number until 
+<kbd>![Length Validation](2-1-hw-password-generator\assets\images\2-length-validation.png)</kbd>
+<kbd>![Character Confirmation](2-1-hw-password-generator\assets\images\3-character-confirmation.png)</kbd>
+<kbd>![Character Validation](2-1-hw-password-generator\assets\images\4-character-validation.png)</kbd>
+<kbd>![Password Generated!](2-1-hw-password-generator\assets\images\5-password-generated.png)</kbd>
+
 ## Logic and Thought Process
 1. HTML Button which starts the function to generate password
 1. Reset all variables if user wants to generate another password again
@@ -19,11 +28,6 @@ https://jasonluxie.github.io/2-1-hw-password-generator/
 1. Function which generates random character for password:
     1. Number of time password runs = User input for password length
     1. Generate random number of array length 
-        ```js
-            function randomInt() {
-            return Math.floor(Math.random() * passwordArr.length);
-            }
-        ```
     1. Add the generated character to the displayed password.
     1. Loop ends after times run is the same as the user input
 1. Display password
