@@ -46,4 +46,4 @@ Password is generated based on user input length and user character choice!
 1. Display password
 
 ## Notes
-See script.js for comments on functionality of javascript.
+See assets/js/script.js for comments on functionality of code.
