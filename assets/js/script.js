@@ -1,14 +1,11 @@
 let generateBtn = document.querySelector("#generate");
-
 function writePassword() {
     let password = generatePassword();
     let passwordText = document.querySelector("#password");
   
     passwordText.value = password;
 }
-
 generateBtn.addEventListener("click", writePassword);
-
 function generatePassword() {  
     let lowercaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
     let uppercaseArr = ['A', 'B', 'C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
@@ -20,8 +17,7 @@ function generatePassword() {
 
     while (passwordLength < 8 || passwordLength > 128) {
         passwordLength = prompt("Password length must be between 8 and 128 characters. Please try again.");
-    }
-
+    };
     function valueCheck(){
         let lowercaseCheck = confirm("Do you want lowercase letters in your password?");
         if (lowercaseCheck) {
@@ -42,21 +38,18 @@ function generatePassword() {
         if (specialCheck) {
             passwordArr = passwordArr.concat(specialArr);
         }
-    };
-    
+    };    
     valueCheck();
-    
-    while (passwordArr === []) {
+    while (passwordArr.length == 0) {
+        alert("You must select at least one type of character to be in your password");
         valueCheck();
-        alert("Yout must select at least one  type of character to be in your password");
     };
-    // console.log(passwordArr);
     function randomInt() {
         return Math.floor(Math.random() * passwordArr.length);
         };
     let passwordActual = "";
     do {
-        passwordActual = passwordActual + passwordArr[randomInt(passwordArr.length)]
-    } while (passwordActual.length < passwordLength)
-    return passwordActual
+        passwordActual = passwordActual + passwordArr[randomInt(passwordArr.length)];
+    } while (passwordActual.length < passwordLength);
+    return passwordActual;
 }
