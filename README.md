@@ -44,3 +44,6 @@ Password is generated based on user input length and user character choice!
     1. Add the generated character to the displayed password.
     1. Loop ends after times run is the same as the user input
 1. Display password
+
+## Notes
+See script.js for comments on functionality of javascript.
